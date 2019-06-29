@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Forum&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+}
+
+.top-container {
+  font-size: 25px;
+  font-family: 'Forum', cursive;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+} 
+
+.header {
+  margin: 0 auto;
+  z-index: 1;    
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  color: #000;
+  text-align: center;
+}    
+  
+.content {
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px; 
+  padding-bottom: 40px; 
+  text-align: left;
+}
+    
+#container {
+   display: grid;
+   margin: auto 0;
+   padding-top: 0px;
+   font-size: 12px;
+    }
+
+.sticky {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 1px;
+}
+
+li {
+display: inline-block;
+text-align: center;
+}
+
+li a {
+display: block; 
+color: #000;
+margin-right: 0;
+margin-left:0;
+padding: 10px; 
+text-decoration: none; 
+}
+
+li a:hover {
+background-color: #000;
+color: #fff;
+}
+    
+li a:link, li a:visited {
+font-size: 13px;
+font-family: 'Roboto', sans-serif;
+background-color: #fff;
+color: black;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+    
+li a:hover, li a:active{
+background-color: #000;
+color: white;
+}
+ 
+a.section {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a.section:hover {
+  color: #000;
+}
+    
+a.section:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+    
+a.section:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}    
+ 
+    
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <h1>Bio</h1>
+</div>
+
+<div class="header" id="myHeader">
+<li><a href="index.html">⒈ Home</a></li>
+<li><a href="bio.html">⒉ Bio</a></li>
+<li><a href="comics.html">⒊ Comics</a></li>   
+<li><a href="writing.html">⒋ Writing</a></li>
+<li><a href=''>⒌ Design</a></li>    
+</div>
+
+<div class="content">
+<img src="https://i.postimg.cc/T3C42Qws/tree.png" width="600">
+    </div>
+<div class="content" id="container">
+<p>Cristian Hernandez-Blick is a student, artist, writer, and designer, currently located in Vancouver, BC. 
+<br>BFA Critical Theory and Cultural Studies - Emily Carr University
+<br>Co-founder and principle operator of alternative comics press <a class="section" href="https://www.shop.ddoogg.ca">DDOOGG</a>
+<br><br>Currently interested in theories, methodologies, histories, and socio-political implications of Genomics, <br>Biological and Cultural Evolution, Ecology, Cognition, Machine Learning and AI, Complex Systems, <br>Process Philosophy, Networks and Sociality, as well as Experimental Comics and Abstraction
+</div>
+
+    
+<div class="header">    
+<li><a href="https://www.instagram.com/organism.zero">INSTAGRAM ↗</a></li>
+<li><a href="https://www.twitter.com/network_motif">TWITTER ↗</a></li>
+<li><a href="https://www.are.na/indra-s-net">ARE.NA ↗</a></li>
+<li><a href="bio.html">Back To Top</a></li>
+</div>    
+    
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
