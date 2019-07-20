@@ -4,7 +4,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/css?family=Roboto|Forum&display=swap" rel="stylesheet">
       <style>
+         ::selection {
+         background: black; /* WebKit/Blink Browsers */
+         color: white;
+         }
+         ::-moz-selection {
+         background: black; /* Gecko Browsers */
+         color: white;
+         }
+         body::-webkit-scrollbar {
+         width: 0.5em;
+         }
+         body::-webkit-scrollbar-thumb {
+         background-color: black;
+         }
          body {
+         cursor:cell;
          margin: 0;
          font-family: 'Forum', cursive;
          display: grid;
@@ -26,23 +41,23 @@
          text-align: center;    
          }
          .content1 {
-         font-size: 30px;
+         font-size: 40px;
          padding-top: 40px;
          background-color: #f3ec1a;
          }
          .content2 {
-         font-size: 30px;
+         font-size: 40px;
          padding-top: 40px;
          background-color: #fff;
          width: 80%;
          }
          .content3 {
-         font-size: 30px;
+         font-size: 40px;
          padding-top: 40px;
          background-color: #7da3f1;
          }
          .content4 {
-         font-size: 30px;
+         font-size: 40px;
          padding-top: 40px;
          background-color: #e6705b;
          }
@@ -60,6 +75,7 @@
          text-align: center;
          }
          li a {
+         cursor: cell;
          display: block; 
          color: #000;
          margin-right: 0;
@@ -91,18 +107,19 @@
          }
          .image {
          display: block;
-         width: 100%;
+         width: 80%;
          height: auto;
-         padding-bottom: 30px;
+         padding-bottom: 10px;
          }
          a {
          color: white;
          text-decoration: none;
          }
          a:hover {
-         text-decoration: underline;    
+         text-decoration: underline; 
          } 
          a.section {
+         cursor: cell;
          position: relative;
          color: #000;
          text-decoration: none;
@@ -129,22 +146,8 @@
          -webkit-transform: scaleX(1);
          transform: scaleX(1);
          }    
-         /* Responsive layout - makes a two column-layout instead of four columns */
-         @media screen and (max-width: 700px) {
-         .column {
-         -ms-flex: 50%;
-         flex: 50%;
-         max-width: 50%;
-         }
-         .container {
-         width: 90%;
-         }
-         li a:link, li a:visited {
-         font-size: 10px;
-         }
-         }
          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-         @media screen and (max-width: 400px) {
+         @media screen and (max-width: 450px) {
          .column {
          -ms-flex: 100%;
          flex: 100%;
@@ -153,6 +156,24 @@
          .container {
          width: 90%;
          } 
+         li a:link, li a:visited {
+         font-size: 9px;
+         padding: 14px;
+         }
+         .content1 {
+         font-size: 30px;
+         }
+         .content2 {
+         font-size: 30px;
+         }
+         .content3 {
+         font-size: 30px;
+         }
+         .content4 {
+         font-size: 30px;
+         }
+         }
+         @media screen and (max-width: 350px) {
          li a:link, li a:visited {
          font-size: 8px;
          }
@@ -174,16 +195,16 @@
          <div class="content1">
             <div class="container">
                <img src="https://i.postimg.cc/526FbcpJ/new2.png" class="image">
-               <p><a class="section" href="">Signaling Pathway Series</a></p>
-               <br>
             </div>
+            <p><a class="section" href="">Signaling Pathway Series</a></p>
+            <br>
          </div>
       </center>
       <center>
          <div class="content2">
             <div class="container">
                <img src="https://i.postimg.cc/sxwt9RRQ/page2a.png" class="image">
-               <p><a class="section" href="">Angel Farmers w/ Juli Majer</a></p>
+               <p><a class="section" href="">Angel Farmers</a></p>
                <br>
             </div>
          </div>
@@ -192,7 +213,7 @@
          <div class="content3">
             <div class="container">
                <img src="https://i.postimg.cc/XYDzY8VW/33.png" class="image">
-               <p><a class="section" href="ai.html">AI Text Generator Collaborations</a></p>
+               <p><a class="section" href="ai.html">AI Text Generator</a></p>
                <br>
             </div>
          </div>

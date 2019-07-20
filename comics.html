@@ -1,222 +1,210 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto|Forum&display=swap" rel="stylesheet">
-
-<style>
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  display: grid;
-}
-
-.top-container {
-  font-size: 25px;
-  font-family: 'Forum', cursive;
-  background-color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.header {
-  margin: 0 auto;
-  z-index: 1;    
-  font-size: 15px;
-  font-family: 'Roboto', sans-serif;
-  background: #fff;
-  color: #000;
-  text-align: center;
-}
-    
-* {
-  box-sizing: border-box;
-}
- 
-.sticky {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 1px;
-}
-
-li {
-display: inline-block;
-text-align: center;
-}
-
-li a {
-display: block; 
-color: #000;
-margin-right: 0;
-margin-left:0;
-padding: 10px; 
-text-decoration: none; 
-}
-    
-li a:link, li a:visited {
-font-size: 13px;
-font-family: 'Roboto', sans-serif;
-background-color: #fff;
-color: black;
-padding: 14px 25px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-    
-li a:hover, li a:active{
-background-color: #000;
-color: white;
-}
- 
-a.section {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-}
-
-a.section:hover {
-  color: #000;
-}
-    
-a.section:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -8px;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-    
-a.section:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}       
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-</style>
-<body>
-
-<div class="top-container">
-  <h1>Comics</h1>
-</div>
-
-<div class="header" id="myHeader">
-<li><a href="index.html">⒈ Home</a></li>
-<li><a href="bio.html">⒉ Bio</a></li>
-<li><a href="comics.html">⒊ Comics</a></li>   
-<li><a href="writing.html">⒋ Writing</a></li>
-<li><a href=''>⒌ Design</a></li>    
-</div>    
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="https://i.postimg.cc/4Nh1mpgF/nexus41.png" style="width:100%">
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/3089724/original_582603e4c0055df9e0a62e74a1a8036d.png?1543045254" style="width:100%">
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/2503441/original_43e8f263aa1e5e2eb16a006705d45f16.jpg?1533140743" style="width:100%">
-    <img src="https://i.postimg.cc/hGRZSpQr/nexus18.png" style="width:100%">
-    <img src="https://i.postimg.cc/HL0ZjXQC/nexus15.png" style="width:100%"> 
-    <img src="https://i.postimg.cc/66khGwXh/nxus2.jpg" style="width:100%">  
-  </div>
-    
-  <div class="column">
-    <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png" style="width:100%">
-    <img src="https://i.postimg.cc/JhR36gB9/nexus37.png" style="width:100%">
-    <img src="https://i.postimg.cc/sxLKbcR5/nexus7.png" style="width:100%">
-    <img src="https://i.postimg.cc/hjSCmvrQ/nexus14.png" style="width:100%"> 
-    <img src="https://i.postimg.cc/MHHdsLgW/nexus5.png" style="width:100%"> 
-    <img src="https://i.postimg.cc/dQkB13z1/nxus3.jpg" style="width:100%">  
-  </div> 
-    
-  <div class="column">
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/2555554/original_97f90c74cff3714045326ac7470c558d.jpg?1534281698" style="width:100%">
-    <img src="https://i.postimg.cc/y6ZmK5Z3/1-4-copy.png" style="width:100%"> 
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/3089727/original_76b686d626d03fabb6f531542940ff40.png?1543045278" style="width:100%">
-    <img src="https://i.postimg.cc/9F4LZvGb/nexus12.png" style="width:100%"> 
-    <img src="https://i.postimg.cc/90QN60wH/nexus3.png" style="width:100%">  
-    <img src="https://i.postimg.cc/KjMrspnL/nxus.jpg" style="width:100%">  
-  </div>
-    
-  <div class="column">
-    <img src="https://i.postimg.cc/NGn4spWH/nexus19.png" style="width:100%">
-    <img src="https://i.postimg.cc/VsZ7SYb5/nexus20.png" style="width:100%">
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/2674556/original_5f9a3886a5fa3ad3df9e085fbf1d3279.jpg?1536516478" style="width:100%">
-    <img src="https://i.postimg.cc/dVySPz33/nexus17.png" style="width:100%"> 
-    <img src="https://i.postimg.cc/9QZ1NZgq/nexus38.png" style="width:100%"> 
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/2399483/original_5fcddb6bedee2177d1f2c2adbd3afa1e.jpg?1530997383" style="width:100%">
-  </div>
-</div>    
-    
-<div class="header">    
-<li><a href="https://www.instagram.com/organism.zero">INSTAGRAM ⤴</a></li>
-<li><a href="https://www.twitter.com/network_motif">TWITTER ⤴</a></li>
-<li><a href="https://www.are.na/indra-s-net">ARE.NA ⤴</a></li>
-<li><a href="comics.html">Back To Top</a></li>
-</div> 
-    
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>    
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Forum&display=swap" rel="stylesheet">
+      <style>
+         ::selection {
+         background: black; /* WebKit/Blink Browsers */
+         color: white;
+         }
+         ::-moz-selection {
+         background: black; /* Gecko Browsers */
+         color: white;
+         }
+         body::-webkit-scrollbar {
+         width: 0.5em;
+         }
+         body::-webkit-scrollbar-thumb {
+         background-color: black;
+         }
+         body {
+         cursor:cell;
+         margin: 0;
+         font-family: 'Roboto', sans-serif;
+         display: grid;
+         }
+         .top-container {
+         font-size: 20px;
+         font-family: 'Forum', cursive;
+         background-color: #fff;
+         padding: 10px;
+         text-align: center;
+         }
+         .header {
+         margin: 0 auto;
+         z-index: 1;    
+         font-size: 15px;
+         font-family: 'Roboto', sans-serif;
+         background: #fff;
+         color: #000;
+         text-align: center;
+         }
+         * {
+         box-sizing: border-box;
+         }
+         .sticky {
+         text-align: center;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         }
+         .sticky + .content {
+         padding-top: 1px;
+         }
+         li {
+         display: inline-block;
+         text-align: center;
+         }
+         li a {
+         cursor:cell;
+         display: block; 
+         color: #000;
+         margin-right: 0;
+         margin-left:0;
+         padding: 10px; 
+         text-decoration: none; 
+         }
+         li a:link, li a:visited {
+         font-size: 15px;
+         font-family: 'Roboto', sans-serif;
+         background-color: #fff;
+         color: black;
+         padding: 14px 14px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         }
+         li a:hover, li a:active{
+         background-color: #000;
+         color: white;
+         }
+         a.section {
+         position: relative;
+         color: #000;
+         text-decoration: none;
+         }
+         a.section:hover {
+         color: #000;
+         }
+         a.section:before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         bottom: -8px;
+         left: 0;
+         background-color: #000;
+         visibility: hidden;
+         -webkit-transform: scaleX(0);
+         transform: scaleX(0);
+         -webkit-transition: all 0.3s ease-in-out 0s;
+         transition: all 0.3s ease-in-out 0s;
+         }
+         a.section:hover:before {
+         visibility: visible;
+         -webkit-transform: scaleX(1);
+         transform: scaleX(1);
+         }       
+         .row {
+         display: -ms-flexbox; /* IE10 */
+         display: flex;
+         -ms-flex-wrap: wrap; /* IE10 */
+         flex-wrap: wrap;
+         padding: 0 4px;
+         }
+         /* Create four equal columns that sits next to each other */
+         .column {
+         -ms-flex: 25%; /* IE10 */
+         flex: 25%;
+         max-width: 25%;
+         padding: 0 4px;
+         }
+         .column img {
+         margin-top: 8px;
+         vertical-align: middle;
+         width: 100%;
+         }
+         @media screen and (max-width: 450px) {
+         .column {
+         -ms-flex: 100%;
+         flex: 100%;
+         max-width: 100%;
+         }
+         li a:link, li a:visited {
+         font-size: 9px;
+         padding: 14px;
+         }
+         }
+         @media screen and (max-width: 350px) {
+         li a:link, li a:visited {
+         font-size: 8px;
+         }
+         }          
+      </style>
+   <body>
+      <div class="top-container">
+         <h1>Comics</h1>
+      </div>
+      <div class="header" id="myHeader">
+         <li><a href="index.html">⒈ Home</a></li>
+         <li><a href="bio.html">⒉ Bio</a></li>
+         <li><a href="comics.html">⒊ Comics</a></li>
+         <li><a href="writing.html">⒋ Writing</a></li>
+         <li><a href=''>⒌ Design</a></li>
+      </div>
+      <!-- Photo Grid -->
+      <div class="row">
+         <div class="column">
+            <img src="https://i.postimg.cc/4Nh1mpgF/nexus41.png" style="width:100%">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/3089724/original_582603e4c0055df9e0a62e74a1a8036d.png?1543045254" style="width:100%">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/2503441/original_43e8f263aa1e5e2eb16a006705d45f16.jpg?1533140743" style="width:100%">
+            <img src="https://i.postimg.cc/hGRZSpQr/nexus18.png" style="width:100%">
+            <img src="https://i.postimg.cc/HL0ZjXQC/nexus15.png" style="width:100%"> 
+            <img src="https://i.postimg.cc/66khGwXh/nxus2.jpg" style="width:100%">  
+         </div>
+         <div class="column">
+            <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png" style="width:100%">
+            <img src="https://i.postimg.cc/JhR36gB9/nexus37.png" style="width:100%">
+            <img src="https://i.postimg.cc/sxLKbcR5/nexus7.png" style="width:100%">
+            <img src="https://i.postimg.cc/hjSCmvrQ/nexus14.png" style="width:100%"> 
+            <img src="https://i.postimg.cc/MHHdsLgW/nexus5.png" style="width:100%"> 
+            <img src="https://i.postimg.cc/dQkB13z1/nxus3.jpg" style="width:100%">  
+         </div>
+         <div class="column">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/2555554/original_97f90c74cff3714045326ac7470c558d.jpg?1534281698" style="width:100%">
+            <img src="https://i.postimg.cc/y6ZmK5Z3/1-4-copy.png" style="width:100%"> 
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/3089727/original_76b686d626d03fabb6f531542940ff40.png?1543045278" style="width:100%">
+            <img src="https://i.postimg.cc/9F4LZvGb/nexus12.png" style="width:100%"> 
+            <img src="https://i.postimg.cc/90QN60wH/nexus3.png" style="width:100%">  
+            <img src="https://i.postimg.cc/KjMrspnL/nxus.jpg" style="width:100%">  
+         </div>
+         <div class="column">
+            <img src="https://i.postimg.cc/NGn4spWH/nexus19.png" style="width:100%">
+            <img src="https://i.postimg.cc/VsZ7SYb5/nexus20.png" style="width:100%">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/2674556/original_5f9a3886a5fa3ad3df9e085fbf1d3279.jpg?1536516478" style="width:100%">
+            <img src="https://i.postimg.cc/dVySPz33/nexus17.png" style="width:100%"> 
+            <img src="https://i.postimg.cc/9QZ1NZgq/nexus38.png" style="width:100%"> 
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/2399483/original_5fcddb6bedee2177d1f2c2adbd3afa1e.jpg?1530997383" style="width:100%">
+         </div>
+      </div>
+      <div class="header">
+         <li><a href="https://www.instagram.com/organism.zero">INSTAGRAM</a></li>
+         <li><a href="https://www.twitter.com/network_motif">TWITTER</a></li>
+         <li><a href="https://www.are.na/indra-s-net">ARE.NA</a></li>
+         <li><a href="comics.html">Back To Top</a></li>
+      </div>
+      <script>
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+      </script>

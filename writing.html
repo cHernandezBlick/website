@@ -1,244 +1,251 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto|Forum&display=swap" rel="stylesheet">
-<style>
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  display: grid;
-}
-
-.top-container {
-  font-size: 25px;
-  font-family: 'Forum', cursive;
-  background-color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-.header {
-  margin: 0 auto;
-  z-index: 1;    
-  font-size: 15px;
-  font-family: 'Roboto', sans-serif;
-  background: #fff;
-  color: #000;
-  text-align: center;    
-}
-
-.content1 {
-  font-size: 15px;
-  padding-top: 40px;
-  background-color: #f4d3a7;
-}
-
-.content2 {
-  font-size: 20px;
-  padding-top: 40px;
-  background-color: #f4d3a7;
-}
-
-.content3 {
-  font-size: 20px;
-  padding-top: 40px;
-  background-color: #7da3f1;
-}
-
-.content4 {
-  font-size: 20px;
-  padding-top: 40px;
-  background-color: #e6705b;
-}
-
-.sticky {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 1px;
-}
-
-li {
-display: inline-block;
-text-align: center;
-}
-
-li a {
-display: block; 
-color: #000;
-margin-right: 0;
-margin-left:0;
-padding: 10px; 
-text-decoration: none; 
-}
-
-li a:hover {
-background-color: #000;
-color: #fff;
-}
-    
-li a:link, li a:visited {
-font-size: 13px;
-font-family: 'Roboto', sans-serif;
-background-color: #fff;
-color: black;
-padding: 14px 25px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-    
-li a:hover, li a:active{
-background-color: #000;
-color: white;
-}
-    
-    
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding-bottom: 30px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #f4d3a7;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  font-family: 'Forum', cursive;
-  color: white;
-  font-size: 25px;
-  position: relative;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 20px;
-}
-    
-
-a {
-    color: white;
-    text-decoration: none;
-    }
-
-a:hover {
-    text-decoration: underline;    
-    } 
-     
-</style>
-</head>
-<body>
-
-<div class="top-container">
-  <h1>Writing</h1>
-</div>
-
-<div class="header" id="myHeader">
-<li><a href="index.html">⒈ Home</a></li>
-<li><a href="bio.html">⒉ Bio</a></li>
-<li><a href="comics.html">⒊ Comics</a></li>   
-<li><a href="writing.html">⒋ Writing</a></li>
-<li><a href=''>⒌ Design</a></li>    
-</div>
-    
-<center>
-<div class="content1">
-<div class="container">
-<img src="https://i.postimg.cc/nrLDBnHx/xeno-Vehicles-Graphic.png" width="600" alt="Avatar" class="image">
-<div class="overlay">
-    <div class="text"><a href="xeno.html">XENO VEHICLES: Nature, Technology & Matter in the Post-Anthropocene (2017)</a>
-</div>
-</div>
-</div>
-</div>
-</center>
-    
-    <center>
-<div class="content1">
-<div class="container">
-<img src="https://i.postimg.cc/JhkCqFrB/infrasound-Graphic.png" width="600" alt="Avatar" class="image">
-<div class="overlay">
-    <div class="text"><a href="">DEEP LISTENING: Infrasonic Territories (2016)</a>
-</div>
-</div>
-</div>
-</div>
-</center>
-    
-<center>
-<div class="content2">
-<div class="container">
-<img src="https://i.postimg.cc/xTBBxRXr/solar-Complexity.png" width="600" alt="Avatar" class="image">
-<div class="overlay">
-    <div class="text"><a href="">ENTROPIC REALISM: Notes on Complexity and Solar Energy (2017)</a>
-</div>
-</div>
-</div>
-</div>
-</center>
-    
-    
-<center>
-<div class="content1">
-<div class="container">
-    <img src="https://i.postimg.cc/7ZZb90Wy/saadiyat-Graphic.png" width="600" alt="Avatar" class="image">
-<div class="overlay">
-<div class="text"><a href="">FIELD REPORT ON SAADIYAT ISLAND: Global Art, Luxury, and Labour(2015)</a>
-</div>
-</div>
-</div>
-</div>
-</center>
-    
-    
-<div class="header">    
-<li><a href="https://www.instagram.com/organism.zero">INSTAGRAM ↗</a></li>
-<li><a href="https://www.twitter.com/network_motif">TWITTER ↗</a></li>
-<li><a href="https://www.are.na/indra-s-net">ARE.NA ↗</a></li>
-<li><a href="writing.html">Back To Top</a></li>
-</div>    
-    
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
-</body>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Forum&display=swap" rel="stylesheet">
+      <style>
+         ::selection {
+         background: black; /* WebKit/Blink Browsers */
+         color: white;
+         }
+         ::-moz-selection {
+         background: black; /* Gecko Browsers */
+         color: white;
+         }
+         body::-webkit-scrollbar {
+         width: 0.5em;
+         }
+         body::-webkit-scrollbar-thumb {
+         background-color: black;
+         }
+         body {
+         cursor:cell;
+         margin: 0;
+         font-family: 'Roboto', sans-serif;
+         display: grid;
+         }
+         .top-container {
+         font-size: 20px;
+         font-family: 'Forum', cursive;
+         background-color: #fff;
+         padding: 10px;
+         text-align: center;
+         }
+         .header {
+         cursor:cell;
+         margin: 0 auto;
+         z-index: 1;    
+         font-size: 15px;
+         font-family: 'Roboto', sans-serif;
+         background: #fff;
+         color: #000;
+         text-align: center;    
+         }
+         .container {
+         position: relative;
+         width: 75%;
+         }
+         .content1 {
+         font-size: 15px;
+         padding-top: 40px;
+         background-color: #f4d3a7;
+         }
+         .content2 {
+         font-size: 20px;
+         padding-top: 40px;
+         background-color: #f4d3a7;
+         }
+         .content3 {
+         font-size: 20px;
+         padding-top: 40px;
+         background-color: #7da3f1;
+         }
+         .content4 {
+         font-size: 20px;
+         padding-top: 40px;
+         background-color: #e6705b;
+         }
+         .sticky {
+         text-align: center;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         }
+         .sticky + .content {
+         padding-top: 1px;
+         }
+         li {
+         display: inline-block;
+         text-align: center;
+         }
+         li a {
+         cursor:cell;
+         display: block; 
+         color: #000;
+         margin-right: 0;
+         margin-left:0;
+         padding: 10px; 
+         text-decoration: none; 
+         }
+         li a:hover {
+         background-color: #000;
+         color: #fff;
+         }
+         li a:link, li a:visited {
+         font-size: 15px;
+         font-family: 'Roboto', sans-serif;
+         background-color: #fff;
+         color: black;
+         padding: 14px 14px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         }
+         li a:hover, li a:active{
+         background-color: #000;
+         color: white;
+         }
+         .image {
+         display: block;
+         width: 75%;
+         height: auto;
+         padding-bottom: 30px;
+         }
+         .overlay {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 100%;
+         width: 100%;
+         opacity: 0;
+         transition: .5s ease;
+         background-color: #f4d3a7;
+         }
+         .container:hover .overlay {
+         opacity: 1;
+         }
+         .text {
+         font-family: 'Forum', cursive;
+         color: white;
+         font-size: 35px;
+         padding: 130px;
+         position: relative;
+         top: 35%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         text-align: center;
+         }
+         a {
+         cursor:cell;
+         color: white;
+         text-decoration: none;
+         }
+         a:hover {
+         text-decoration: underline;    
+         } 
+         /* Responsive layout - makes a two column-layout instead of four columns */
+         @media screen and (max-width: 450px) {
+         .column {
+         -ms-flex: 100%;
+         flex: 100%;
+         max-width: 100%;
+         }
+         .container {
+         width: 90%;
+         }
+         .text {
+         font-size: 20px;
+         padding: 0;
+         }
+         li a:link, li a:visited {
+         font-size: 9px;
+         padding: 14px;
+         }
+         .image {
+         width: 92%;
+         }
+         }
+         @media screen and (max-width: 350px) {
+         li a:link, li a:visited {
+         font-size: 8px;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="top-container">
+         <h1>Writing</h1>
+      </div>
+      <div class="header" id="myHeader">
+         <li><a href="index.html">⒈ Home</a></li>
+         <li><a href="bio.html">⒉ Bio</a></li>
+         <li><a href="comics.html">⒊ Comics</a></li>
+         <li><a href="writing.html">⒋ Writing</a></li>
+         <li><a href=''>⒌ Design</a></li>
+      </div>
+      <center>
+         <div class="content1">
+            <div class="container">
+               <img src="https://i.postimg.cc/nrLDBnHx/xeno-Vehicles-Graphic.png" alt="Avatar" class="image">
+               <div class="overlay">
+                  <div class="text"><a href="xeno.html">XENO VEHICLES: Nature, Technology & Matter in the Post-Anthropocene (2017)</a></div>
+               </div>
+            </div>
+         </div>
+      </center>
+      <center>
+         <div class="content1">
+            <div class="container">
+               <img src="https://i.postimg.cc/JhkCqFrB/infrasound-Graphic.png" alt="Avatar" class="image">
+               <div class="overlay">
+                  <div class="text"><a href="">DEEP LISTENING: Sensing Infrasonic Territories (2016)</a></div>
+               </div>
+            </div>
+         </div>
+      </center>
+      <center>
+         <div class="content2">
+            <div class="container">
+               <img src="https://i.postimg.cc/xTBBxRXr/solar-Complexity.png" alt="Avatar" class="image">
+               <div class="overlay">
+                  <div class="text"><a href="">ENTROPIC REALISM: Notes on Complexity and Solar Energy (2017)</a></div>
+               </div>
+            </div>
+         </div>
+      </center>
+      <center>
+         <div class="content1">
+            <div class="container">
+               <img src="https://i.postimg.cc/7ZZb90Wy/saadiyat-Graphic.png" alt="Avatar" class="image">
+               <div class="overlay">
+                  <div class="text"><a href="">FIELD REPORT ON SAADIYAT ISLAND: Global Art, Luxury, and Labour (2015)</a></div>
+               </div>
+            </div>
+         </div>
+      </center>
+      <div class="header">
+         <li><a href="https://www.instagram.com/organism.zero">INSTAGRAM ↗</a></li>
+         <li><a href="https://www.twitter.com/network_motif">TWITTER ↗</a></li>
+         <li><a href="https://www.are.na/indra-s-net">ARE.NA ↗</a></li>
+         <li><a href="writing.html">Back To Top</a></li>
+      </div>
+      <script>
+         window.onscroll = function() {myFunction()};
+         
+         var header = document.getElementById("myHeader");
+         var sticky = header.offsetTop;
+         
+         function myFunction() {
+           if (window.pageYOffset > sticky) {
+             header.classList.add("sticky");
+           } else {
+             header.classList.remove("sticky");
+           }
+         }
+      </script>
+   </body>
 </html>
